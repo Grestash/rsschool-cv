@@ -8,6 +8,7 @@
 
 ### About me: 
 I am 16 years old and I am in 10th grade. I really like to code.  My goal is to learn new skills and gain knowledge  in the field of front-end development.
+
 **My strengths:**
 * self-discipline
 * determination
