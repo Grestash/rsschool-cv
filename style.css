@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Gilroy;
+     src: url("assets/fonts/Gilroy-Semibold.ttf");
+   }
+
+
+body {
+    background-color: #d3d3d3;
+    font-family: Gilroy, sans-serif;
+    color: #000000;
+}
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: #ffffff;
+   
+  }
+
+  html {
+    scroll-behavior: smooth; 
+  }
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+  }  
+
+  .nav-item {
+    margin-right: 100px;
+}
+
+ .nav-item a {
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #000000;
+ }
+
+ .nav-item a:hover {
+  border-bottom: 2px solid #000000 ;
+}
