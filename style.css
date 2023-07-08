@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+
 @font-face {
     font-family: Gilroy;
      src: url("assets/fonts/Gilroy-Semibold.ttf");
@@ -17,12 +23,19 @@ body {
     max-width: 1024px;
     margin: 0 auto;
     background-color: #ffffff;
-   
+    font-size: 18px;
+    line-height: 1.5;
+    box-shadow: 50px 50px 50px -1px rgba(0, 0, 0, 0.25);
   }
 
   html {
     scroll-behavior: smooth; 
   }
+
+.header {
+  border: 2px solid #000000;
+  background-color: #B0E0E6;
+}  
 
 .nav-list {
     display: flex;
@@ -32,7 +45,7 @@ body {
   }  
 
   .nav-item {
-    margin-right: 100px;
+    margin-right: 90px;
 }
 
  .nav-item a {
@@ -45,3 +58,66 @@ body {
  .nav-item a:hover {
   border-bottom: 2px solid #000000 ;
 }
+
+ .left-column {
+  width: 40%;
+  text-align: center;
+  
+ }
+
+ .profile img {
+    border: 2px solid #000000;
+    border-radius: 50%;
+    margin-top: 10px;
+ }
+
+ .profile h1 {
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: #000000;
+ }
+
+ .contacts h2 {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 30px 20px;
+  background-color: #B0E0E6;
+  width: 140px;
+  text-align: center;
+  letter-spacing: 1px;
+  display: inline-block;
+  border: 2px solid #000000;
+ }
+
+  .contacts-list {
+    list-style: none;
+  }
+  
+  .contacts-list-item {
+    margin-bottom: 10px;
+    display: flex;
+  }
+ 
+  .contacts-list-item img {
+    margin-right: 15px;
+    
+    
+  }
+
+  .contacts-list-item p {
+    display: inline;
+    margin-block: 0;
+  }
+
+  .contacts-list-item a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000000;
+  }
+
+  .contacts-list-item a:hover {
+    border-bottom: 2px solid #000000 ;
+  }
+ 
