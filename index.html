@@ -1,11 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/icons/favicon.ico">
+    <title>Pavel Shliatski CV</title>
 </head>
 <body>
+
+    <div class="container">
+        <header class="header">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#about-myself" class="nav-link">About Myself</a></li>
+                    <li class="nav-item"><a href="#work-experience" class="nav-link">Work experience</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="left-column">
+                <section class="profile" id="profile">
+                    <img src="assets/img/CV-photo.jpg" alt="Cv-photo" width="205" height="205">
+                    <h1> Pavel Shliatski</h1>
+
+                </section>
+
+                <section class="contacts">
+                    <h2>Contacts</h2>
+                    <ul class="contacts-list">
+                        <li class="contacts-list-item">
+                            <img src="assets/icons/icons8-email-50.png" alt="Email icon" width="30" height="30">
+                            <p>pavelshlatcki1@gmail.com</p>
+                        </li>
+                        <li class="contacts-list-item">
+                            <img src="assets/icons/icons8-github-50.png" alt="Github icon" width="30" height="30">
+                            <a href="https://github.com/Grestash">Github</a>
+                        </li>
+                        <li class="contacts-list-item">
+                            <img src="assets/icons/icons8-discord-50.png" alt="Discord icon" width="30" height="30">
+                            <a href="https://discord.com/users/518773822850072616">Discord</a>
+                        </li>
+                    </ul>
+                </section>
+
+
+
+                <section class="code-example">
+                    <h2 id="code-example">code example</h2>
+                    <pre>
+                        <code class="code">
+                            &lt;script&gt;
+
+                                function pow(x, n) {
+                              let result = x;
+                              for (let i = 1; i &lt; n; i++) {
+                                result *= x;
+                              }
+                              return result;
+                            }
+                            let x = prompt("Enter x:", '');
+                            let n = prompt("Enter n:", '');
+                            if (n >= 1 && n % 1 == 0) {
+                              alert( pow(x, n) );
+                            } else {
+                              alert(`The degree must be a natural number.`);
+                            }
+
+                            &lt;/script&gt;
+                        </code>
+                    </pre>
+                </section>
+            </div>
+
+
+            <div class="right-column">
+                <section class="about-myself">
+                    <h2>about myself</h2>
+                    <p>I am a future student of BSUIR. My goal is to become a professional FrontEnd developer.
+                         My strengths are sociability, perseverance, punctuality and discipline.</p>
+                </section>
+
+                <section class="work-experience">
+                    <h2 id="work-experience">work experience</h2>
+                    <p >I did one <a href="https://grestash.github.io/burgers/">project</a> while participating in a training intensive. </p>
+                </section>
+
+                <section class="education">
+                    <h2 id="education">education</h2>
+                    <a href="https://rs.school/courses/javascript-preschool-ru" class="education-link">JavaScript/Front-end Pre-School Course by Rolling Scopes School(in process…)</a>
+                </section>
+
+                <section class="skills">
+                    <h2 id="skills">Skills</h2>
+                    <ul class="skills-list">
+                        <li class="skills-list-item">HTML</li>
+                        <li class="skills-list-item">Git/GitHub</li>
+                        <li class="skills-list-item">JavaScript (Fundamentals)</li>
+                        <li class="skills-list-item">CSS</li>
+                    </ul>
+                </section>
+
+                <section class="languages">
+                    <h2>languages</h2>
+                    <p>My native languages are Belarusian and Russian. I also know other languages:</p>
+                    <ul>
+                        <li>English (B1 level. I continue to learn the language and practice it with native speakers.)</li>
+                        <li>Polish (A2 level. I attended offline language courses in my hometown and had a lot of practice.)</li>
+                    </ul>
+                </section>
+
+            </div>
+        </main>
+
+        <footer class="footer">
+            <a class="github" href="https://github.com/Grestash">
+                <img src="assets/icons/icons8-github-50.png" alt="Github icon" width="30" height="30">
+                <p>Visit my GitHub</p>
+            </a>
+
+            <p> © 2024</p>
+
+            <a href="https://rs.school/courses/javascript-ru">
+                <img src="assets/icons/rs-school-logo.svg" alt="rsschool-logo" width="73" height="27">
+            </a>
+        </footer>
+
+
+    </div>
+
+
+
 
 </body>
 </html>
